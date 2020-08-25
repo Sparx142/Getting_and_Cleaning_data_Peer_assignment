@@ -31,3 +31,6 @@ finalData <- tidyData %>%
             group_by(subject,activity) %>%
             summarize_all(funs(mean))
 write.table(finalData,file= "FinalData.txt", row.names = FALSE)
+
+#output data
+str(finalData)

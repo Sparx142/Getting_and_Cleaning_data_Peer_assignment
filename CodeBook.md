@@ -30,8 +30,11 @@ The run_analysis.R script performs the data preparation and then followed by the
 
 3.Merges the training and the test sets to create one data set
   X (10299 rows, 561 columns) is created by merging x_train and x_test using rbind() function
+  
   Y (10299 rows, 1 column) is created by merging y_train and y_test using rbind() function
+  
   Subject (10299 rows, 1 column) is created by merging subject_train and subject_test using rbind() function
+  
   Merged_Data (10299 rows, 563 column) is created by merging Subject, Y and X using cbind() function
 
 4.Extracts only the measurements on the mean and standard deviation for each measurement
